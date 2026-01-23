@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 20% 10%;
+    --foreground: 45 20% 90%;
+
+    --card: 220 25% 14%;
+    --card-foreground: 45 20% 90%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 45 20% 90%;
+
+    --primary: 45 80% 55%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 0 70% 45%;
+    --secondary-foreground: 45 20% 95%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 45 10% 65%;
+
+    --accent: 200 60% 40%;
+    --accent-foreground: 45 20% 95%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 20%;
+    --ring: 45 80% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 45 20% 90%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 0 70% 45%;
+    --sidebar-accent-foreground: 45 20% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 45 80% 55%;
+
+    --chart-1: 45 80% 55%;
+    --chart-2: 0 70% 50%;
+    --chart-3: 200 60% 50%;
+    --chart-4: 120 40% 40%;
+    --chart-5: 280 50% 50%;
+
+    --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'EB Garamond', ui-serif, Georgia, serif;
+    --font-mono: 'Fira Code', ui-monospace, monospace;
+
+    --shadow-glow: 0 0 20px hsl(45 80% 55% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.5);
+    --shadow-clue: 0 2px 10px hsl(0 70% 45% / 0.3);
+
+    --gradient-noir: linear-gradient(180deg, hsl(220 25% 8%) 0%, hsl(220 20% 15%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 70% 35%) 0%, hsl(0 80% 25%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 55%) 0%, hsl(35 70% 45%) 100%);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 45 20% 90%;
+
+    --card: 220 25% 14%;
+    --card-foreground: 45 20% 90%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 45 20% 90%;
+
+    --primary: 45 80% 55%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 0 70% 45%;
+    --secondary-foreground: 45 20% 95%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 45 10% 65%;
+
+    --accent: 200 60% 40%;
+    --accent-foreground: 45 20% 95%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 20%;
+    --ring: 45 80% 55%;
+
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 45 20% 90%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 0 70% 45%;
+    --sidebar-accent-foreground: 45 20% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 45 80% 55%;
+
+    --chart-1: 45 80% 55%;
+    --chart-2: 0 70% 50%;
+    --chart-3: 200 60% 50%;
+    --chart-4: 120 40% 40%;
+    --chart-5: 280 50% 50%;
+
+    --shadow-glow: 0 0 20px hsl(45 80% 55% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.5);
+    --shadow-clue: 0 2px 10px hsl(0 70% 45% / 0.3);
+
+    --gradient-noir: linear-gradient(180deg, hsl(220 25% 8%) 0%, hsl(220 20% 15%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 70% 35%) 0%, hsl(0 80% 25%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 55%) 0%, hsl(35 70% 45%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
