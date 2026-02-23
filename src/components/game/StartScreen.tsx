@@ -26,8 +26,8 @@ export const StartScreen = ({ onStartGame }: StartScreenProps) => {
           </Badge>
           
           <h1 className="mb-6 font-serif text-6xl font-bold text-foreground md:text-7xl">
-            Blockchain<br />
-            <span className="text-primary">Detective</span>
+            AI Police Crypto<br />
+            <span className="text-primary">Investigator</span>
           </h1>
           
           <p className="mb-8 text-lg text-muted-foreground">
