@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Suspect } from '@/types/game';
-import { Trophy, XCircle, RotateCcw, Target } from 'lucide-react';
+import { Trophy, XCircle, RotateCcw, Target, Home } from 'lucide-react';
 
 interface GameOverScreenProps {
   solved: boolean;
@@ -37,6 +37,11 @@ export const GameOverScreen = ({ solved, selectedSuspect, correctSuspect, onRest
               <Button onClick={onRestart} size="lg" className="mt-4 w-full">
                 <RotateCcw className="mr-2 h-4 w-4" />
                 Play Again
+              </Button>
+              <Button onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
+                      className="mt-2 w-full bg-yellow-500 hover:bg-yellow-400 text-black">
+                <Home className="mr-2 h-4 w-4" />
+                Home
               </Button>
             </>
           ) : (
